@@ -2,10 +2,10 @@ export const ContactInfo = () => {
     return (
       <div id="Contact_Info">
         <h4>Let's work together</h4>
-        <p>how do you take your cofee?</p>
+        <p>I'm open to small projects and Long term work</p>
         <ul>
           <li>
-            <a href="www.Upwork.com" rel="noreferrer" target="_blank">
+            <a href="https://www.upwork.com/freelancers/~0110cdc26c10b7e236" rel="noreferrer" target="_blank">
               <div id="icon"><i class="fab fa-facebook-square"></i>
                 Upwork</div>
             </a>
@@ -16,12 +16,12 @@ export const ContactInfo = () => {
             </a>
           </li>
           <li>
-            <a href="www.LinkedIn.com" rel="noreferrer" target="_blank">
+            <a href="https://www.linkedin.com/in/jeison-roblero-campos/" rel="noreferrer" target="_blank">
               <div id="icon"><i class="fab fa-twitter"></i>freeCodeCamp.org</div>
             </a>
           </li>
           <li>
-            <a href="www.LinkedIn.com" rel="noreferrer" target="_blank">
+            <a href="https://www.linkedin.com/in/jeison-roblero-campos/" rel="noreferrer" target="_blank">
               <div id="icon"><i class="fab fa-twitter"></i>LinkedIn</div>
             </a>
           </li>

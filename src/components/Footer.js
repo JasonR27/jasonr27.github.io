@@ -5,7 +5,7 @@ export const Footer = () => {
         <footer>
           <p>Check all the projects... let me know what kind of work you're looking for</p>
           <div><i class="far fa-copyright"></i>
-            <p>Created by RobJeison</p>
+            <p>Created by Rob.Jason</p>
           </div>
         </footer>
       </div>

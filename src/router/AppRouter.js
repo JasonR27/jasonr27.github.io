@@ -1,20 +1,28 @@
-import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import React, { Component } from 'react'
+//import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import { PrtflAppWrapper } from '../App'
 import { RQMAppWrapper } from '../pages/RandomQuoteMachine'
-//import { JSCalcAppWrapper } from '../pages/JavascriptCalculator'
-//import { DMAppWrapper } from '../pages/DrumMachine'
-//import { SPAppWrapper } from '../pages/SurveyPage'
-//import { LPAppWrapper } from '../pages/LandingPage'
-//import { TPAppWrapper } from '../pages/TributePage'
+import { JSCalcAppWrapper } from '../pages/JavascriptCalculator'
+import { DMAppWrapper } from '../pages/DrumMachine'
+import { SPAppWrapper } from '../pages/SurveyPage'
+import { LPAppWrapper } from '../pages/LandingPage'
+import { TPAppWrapper } from '../pages/TributePage'
+import { NotFound } from '../pages/NotFound'
 
 export function AppRouter() {
     return (
         < Router >
             <Switch>
-            <Route path="/" >
-            <PrtflAppWrapper />  
-            </Route>              
+                <Route path="/" > <PrtflAppWrapper /> </Route>
+                <Route path="/" component={PrtflAppWrapper} />
+                <Route exact path="/Random-Quote-Machine" component={RQMAppWrapper} />
+                <Route exact path="/Javascript-Calculator" component={JSCalcAppWrapper} />
+                <Route exact path="/Drum-Machine" component={DMAppWrapper} />
+                <Route exact path="/Survey-Page" component={SPAppWrapper} />
+                <Route exact path="/Landing-Page" component={LPAppWrapper} />
+                <Route exact path="/NotFound" component={NotFound} />
+                <Route exact path="/TributePage" component={TPAppWrapper} />
                 {/**<Route exact path="/" ><Portfolio /></Route>              
                 <Route exact path="/Random-Quote-Machine" ><RQMAppWrapper /></Route>              
                 <Route exact path="/Javascript-Calculator" ><JSCalc /></Route>              

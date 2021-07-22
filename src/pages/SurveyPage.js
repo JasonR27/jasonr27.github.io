@@ -1,8 +1,8 @@
 import React from 'react'
-//import styles from '../pagesstyles/SurveyPage.module.css'
+import '../pagesstyles/SurveyPage.module.css'
 import Helmet from 'react-helmet'
 
-export const SurveyPage = () => {
+const SurveyPage = () => {
     return (
 
         <section id="main">

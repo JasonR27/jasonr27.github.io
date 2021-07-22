@@ -526,4 +526,4 @@ export class JSCalcAppWrapper extends React.Component {
     }
   }
 
-export default JSCalc;
+export default JSCalcAppWrapper;

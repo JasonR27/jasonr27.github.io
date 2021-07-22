@@ -13,7 +13,6 @@ import ProjectPage2 from './components/ProjectPage2'
 import ProjectPage3 from './components/ProjectPage3'
 import Helmet from 'react-helmet'
 
-
 //Redux:
 
 const RC = "RC";
@@ -148,7 +147,7 @@ const ProjectsPages = (props) => {
           handleRightClick={handleRightClick}
         />
       );
-  }
+   }
 }
 
 const ProjectsStand = connect(mapStateToProps, mapDispatchToProps)(ProjectsPages);

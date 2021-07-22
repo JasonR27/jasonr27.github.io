@@ -8,19 +8,19 @@ export const ProjectPage1 = (props) => {
         <h3>These are some of my projects</h3>
         <ul>
           <li>
-            <div class="project-tile"><a href="/Random-Quote-Machine" target="_blank" rel="noopener noreferrer"><img alt="Descriptive image of the project"  id="project_imgs" src="https://assets.codepen.io/3857943/internal/screenshots/pens/qBqoKrL.default.png"></img>
+            <div class="project-tile"><a href="https://jasonr27.github.io/RandomQuoteMachine.github.io/" target="_blank" rel="noopener noreferrer"><img alt="Descriptive image of the project"  id="project_imgs" src="https://assets.codepen.io/3857943/internal/screenshots/pens/qBqoKrL.default.png"></img>
               <p>Random Quote Machine</p>
             </a></div>
           </li>
           <li>
-            <div class="project-tile"><a href="/Javascript-Calculator"  target="_blank" rel="noopener noreferrer"><img alt="Descriptive image of the project"  id="project_imgs" src="https://assets.codepen.io/3857943/internal/screenshots/pens/BaWOzKM.default.png"></img>
+            <div class="project-tile"><a href="https://jasonr27.github.io/JSCalculator.github.io/"  target="_blank" rel="noopener noreferrer"><img alt="Descriptive image of the project"  id="project_imgs" src="https://assets.codepen.io/3857943/internal/screenshots/pens/BaWOzKM.default.png"></img>
   
               <p>Javascript Calculator</p>
   
             </a></div>
           </li>          
           <li>
-            <div class="project-tile"><a href="/Survey-Page"  target="_blank" rel="noopener noreferrer"><img alt="Descriptive image of the project"  id="project_imgs" src="https://assets.codepen.io/3857943/internal/screenshots/pens/vYXzGdy.default.png"></img>
+            <div class="project-tile"><a href="https://jasonr27.github.io/SurveyPage.github.io/"  target="_blank" rel="noopener noreferrer"><img alt="Descriptive image of the project"  id="project_imgs" src="https://assets.codepen.io/3857943/internal/screenshots/pens/vYXzGdy.default.png"></img>
   
               <p>Survey Page</p>
   
@@ -28,7 +28,7 @@ export const ProjectPage1 = (props) => {
           </li>
           <li>
             <div class="project-tile"><a
-              href="Landing-Page"  target="_blank" rel="noopener noreferrer"><img alt="Descriptive image of the project"  id="project_imgs" src="https://assets.codepen.io/3857943/internal/screenshots/pens/RwGYdPZ.default.png" target="_blank"></img>
+              href="https://jasonr27.github.io/LandingPage.github.io/"  target="_blank" rel="noopener noreferrer"><img alt="Descriptive image of the project"  id="project_imgs" src="https://assets.codepen.io/3857943/internal/screenshots/pens/RwGYdPZ.default.png" target="_blank"></img>
   
               <p>Landing Page</p>
   
@@ -46,7 +46,7 @@ export const ProjectPage1 = (props) => {
             </a></div>
           </li>
           <li>
-            <div class="project-tile"><a href="Technical-Documentation-Page"  target="_blank" rel="noopener noreferrer"><img alt="Descriptive image of the project"  id="project_imgs" src="https://assets.codepen.io/3857943/internal/screenshots/pens/PoGxgdL.default.png"></img>
+            <div class="project-tile"><a href="https://jasonr27.github.io/TechnicalDocumentationPage.github.io/"  target="_blank" rel="noopener noreferrer"><img alt="Descriptive image of the project"  id="project_imgs" src="https://assets.codepen.io/3857943/internal/screenshots/pens/PoGxgdL.default.png"></img>
   
               <p>Technical Documentation Page</p>
   

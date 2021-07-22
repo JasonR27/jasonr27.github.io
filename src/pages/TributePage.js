@@ -39,4 +39,12 @@ export const TributePage = () => {
     )
 }
 
+export const TPAppWrapper = () => {
+    return (
+        <section id="TributePage" >
+            <TributePage />
+        </section>
+    );
+}
+
 export default TributePage

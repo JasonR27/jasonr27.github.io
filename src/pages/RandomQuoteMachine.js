@@ -1,6 +1,7 @@
 import React from 'react'
 import $ from 'jquery'
 //import styles from  '../pagesstyles/RandomQuoteMachine.css'
+import '../pagesstyles/RandomQuoteMachine.module.css'
 import Helmet from 'react-helmet'
 class RandomQuoteMachine extends React.Component {
   constructor(props) {
@@ -79,10 +80,7 @@ class RandomQuoteMachine extends React.Component {
 
   render() {
     return (
-      <section id="sectionContainer">
-        <Helmet>
-        <link rel="stylesheet" href='../src/pagesstyles/RandomQuoteMachine.module.css' />
-      </Helmet>
+      <section id="sectionContainer">        
         <div id="quote-box">
           <QuotePage
             id="QuotePage"
