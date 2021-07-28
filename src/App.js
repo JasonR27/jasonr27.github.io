@@ -89,9 +89,9 @@ function Portfolio() {
     <Router>
       <Helmet>
         <link rel="stylesheet" href="App.module.css" />
-      </Helmet>      
+      </Helmet>
       <Provider store={store} exact route="/">
-        <div className="App">
+        <div className="App">          
           <NavBar />
           <WelcomeSection />
           <div id="projectsstand"></div>
@@ -147,7 +147,7 @@ const ProjectsPages = (props) => {
           handleRightClick={handleRightClick}
         />
       );
-   }
+  }
 }
 
 const ProjectsStand = connect(mapStateToProps, mapDispatchToProps)(ProjectsPages);
