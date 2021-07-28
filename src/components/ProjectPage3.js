@@ -1,9 +1,11 @@
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 export const ProjectPage3 = (props) => {
 
     return (
       <section id="projects">
-        <div id="arrowButtons" className="btnsL" onClick={props.handleLeftClick}>L</div>
+        <div id="arrowButtons" className="btnsL" onClick={props.handleLeftClick}><ArrowBackIosIcon id="pArrowIcons" /></div>
         <div id="titleProjectsButton">
         <h3>These are some of my projects</h3>
         <ul>
@@ -51,7 +53,7 @@ export const ProjectPage3 = (props) => {
         </ul>
       {/**<button>Show All</button>*/}  
         </div>
-        <div id="arrowButtons" className="btnsR" onClick={props.handleLeftClick}>R</div>
+        <div id="arrowButtons" className="btnsR" onClick={props.handleLeftClick}><ArrowForwardIosIcon id="pArrowIcons" /></div>
       </section>
     )
   }

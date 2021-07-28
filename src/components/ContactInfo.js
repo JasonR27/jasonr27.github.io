@@ -1,3 +1,5 @@
+import { Icon } from "@material-ui/core";
+
 export const ContactInfo = () => {
     return (
       <div id="Contact_Info">
@@ -17,7 +19,7 @@ export const ContactInfo = () => {
           </li>
           <li>
             <a href="https://www.linkedin.com/in/jeison-roblero-campos/" rel="noreferrer" target="_blank">
-              <div id="icon"><i class="fab fa-twitter"></i>freeCodeCamp.org</div>
+              <div id="icon"><Icon className="fab fa-linkedin"></Icon>freeCodeCamp.org</div>
             </a>
           </li>
           <li>

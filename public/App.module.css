@@ -112,6 +112,14 @@ root {
 
 }
 
+#pArrowIcons {
+    font-size: 7rem;      
+}
+
+#arrowsColors {
+  font-size: 5rem;    
+}
+
 #titleProjectsButton {
   display: flex;
   flex-direction: row;
