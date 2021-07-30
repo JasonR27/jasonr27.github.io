@@ -15,12 +15,12 @@ export function AppRouter() {
         < Router >
             <Switch>
                 <Route path="/" > <PrtflAppWrapper /> </Route>
-                <Route path="/#/Random-Quote-Machine" > <RQMAppWrapper /> </Route>
-                <Route path="/#/Javascript-Calculator" > <JSCalcAppWrapper /> </Route>
-                <Route path="/#/Drum-Machine" > <DMAppWrapper /> </Route>
-                <Route path="/#/Survey-Page" > <SPAppWrapper /> </Route>
-                <Route path="/#/Landing-Page" > <LPAppWrapper /> </Route>                
-                <Route path="/#/Tribute-Page" > <TPAppWrapper /> </Route>
+                <Route exact path="/Random-Quote-Machine" > <RQMAppWrapper /> </Route>
+                <Route exact path="/Javascript-Calculator" > <JSCalcAppWrapper /> </Route>
+                <Route exact path="/Drum-Machine" > <DMAppWrapper /> </Route>
+                <Route exact path="/Survey-Page" > <SPAppWrapper /> </Route>
+                <Route exact path="/Landing-Page" component={LPAppWrapper}/>                
+                <Route exact path="/Tribute-Page" > <TPAppWrapper /> </Route>
                 
                 {/**<Route path="/Portfolio" component={PrtflAppWrapper} />
                  * <Route exact path="/Random-Quote-Machine" component={RQMAppWrapper} />

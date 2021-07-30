@@ -63,7 +63,9 @@ root {
 #welcome-section {
   box-sizing: border-box;
   height: 100vh;
-  background-image: url("https://miro.medium.com/max/1400/1*CpDidbInbG4Er_0j_hknFQ.jpeg");
+  background: url("https://miro.medium.com/max/1400/1*CpDidbInbG4Er_0j_hknFQ.jpeg");
+  background-size: 100% 100%;
+  width: inherit;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -84,7 +86,16 @@ root {
 
 #projectsstand {
   height: 0rem;
-  background-color: #667292;
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 7%,
+    rgba(33, 33, 105, 1) 27%,
+    rgb(23, 190, 126) 38%,
+    rgb(20, 173, 58) 46%,
+    rgb(142, 10, 168) 57%,
+    rgb(21, 142, 179) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 #arrowButtons { 
