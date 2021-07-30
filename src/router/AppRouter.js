@@ -15,14 +15,21 @@ export function AppRouter() {
         < Router >
             <Switch>
                 <Route path="/" > <PrtflAppWrapper /> </Route>
-                <Route path="/" component={PrtflAppWrapper} />
-                <Route exact path="/Random-Quote-Machine" component={RQMAppWrapper} />
+                <Route path="/#/Random-Quote-Machine" > <RQMAppWrapper /> </Route>
+                <Route path="/#/Javascript-Calculator" > <JSCalcAppWrapper /> </Route>
+                <Route path="/#/Drum-Machine" > <DMAppWrapper /> </Route>
+                <Route path="/#/Survey-Page" > <SPAppWrapper /> </Route>
+                <Route path="/#/Landing-Page" > <LPAppWrapper /> </Route>                
+                <Route path="/#/Tribute-Page" > <TPAppWrapper /> </Route>
+                
+                {/**<Route path="/Portfolio" component={PrtflAppWrapper} />
+                 * <Route exact path="/Random-Quote-Machine" component={RQMAppWrapper} />
                 <Route exact path="/Javascript-Calculator" component={JSCalcAppWrapper} />
                 <Route exact path="/Drum-Machine" component={DMAppWrapper} />
                 <Route exact path="/Survey-Page" component={SPAppWrapper} />
                 <Route exact path="/Landing-Page" component={LPAppWrapper} />
                 <Route exact path="/NotFound" component={NotFound} />
-                <Route exact path="/TributePage" component={TPAppWrapper} />
+    <Route exact path="/TributePage" component={TPAppWrapper} />*/}
                 {/**<Route exact path="/" ><Portfolio /></Route>              
                 <Route exact path="/Random-Quote-Machine" ><RQMAppWrapper /></Route>              
                 <Route exact path="/Javascript-Calculator" ><JSCalc /></Route>              
