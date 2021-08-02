@@ -1,7 +1,7 @@
 import React from 'react'
 import $ from 'jquery'
 //import styles from  '../pagesstyles/RandomQuoteMachine.css'
-import '../pagesstyles/RandomQuoteMachine.module.css'
+//import '../pagesstyles/RandomQuoteMachine.module.css'
 import Helmet from 'react-helmet'
 class RandomQuoteMachine extends React.Component {
   constructor(props) {
@@ -9,7 +9,7 @@ class RandomQuoteMachine extends React.Component {
     this.state = {
       text: "",
       author: "",
-       data: []
+      data: []
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -74,13 +74,13 @@ class RandomQuoteMachine extends React.Component {
       $("#tb-icon").css("color", rancolor);
       $("h2").css("fontSize", "50px");
       $("#text").css("color", rancolor);
-      $("#author").css("color", rancolor)      
+      $("#author").css("color", rancolor)
     });
   }
 
   render() {
     return (
-      <section id="sectionContainer">        
+      <section id="sectionContainer">
         <div id="quote-box">
           <QuotePage
             id="QuotePage"
@@ -164,7 +164,7 @@ $(document).ready(function () {
   $("#tb-icon").css("color", rancolor);
   $("h2").css("fontSize", "50px");
   $("#text").css("color", rancolor);
-  $("#author").css("color", rancolor)  
+  $("#author").css("color", rancolor)
 });
 
 export default RQMAppWrapper

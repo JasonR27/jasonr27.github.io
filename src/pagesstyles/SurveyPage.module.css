@@ -28,8 +28,7 @@
 #SPAppWrapper > #survey-form {
   border-radius: 5px;  
   display: grid;
-  background-color: rgba(100, 100, 168, 0.0); 
-  background-opacity: 0.;
+  background-color: rgba(100, 100, 168, 0.0);   
   margin:auto;
   max-width: 700px;
   grid-gap: 10px;
@@ -64,8 +63,7 @@
   border-radius: 10px;
   width:775px;
   max-width: 850px; 
-  background-color: rgba(100, 100, 168, 0.50); 
-  background-opacity: 0.5;  
+  background-color: rgba(100, 100, 168, 0.50);   
 }
 
 #SPAppWrapper > input[type=text], #SPAppWrapper > [type=email], #SPAppWrapper > [type=number], select {

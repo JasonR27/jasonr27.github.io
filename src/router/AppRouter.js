@@ -21,6 +21,7 @@ export function AppRouter() {
                 <Route exact path="/Survey-Page" > <SPAppWrapper /> </Route>
                 <Route exact path="/Landing-Page" component={LPAppWrapper}/>                
                 <Route exact path="/Tribute-Page" > <TPAppWrapper /> </Route>
+                <Route exact path="*" > <NotFound /> </Route>
                 
                 {/**<Route path="/Portfolio" component={PrtflAppWrapper} />
                  * <Route exact path="/Random-Quote-Machine" component={RQMAppWrapper} />
