@@ -8,7 +8,7 @@ import { WelcomeSection } from "./components/WelcomeSection";
 import { NavBar } from "./components/NavBar";
 import ContactInfoAndFooter from "./components/ContactInfoAndFooter";
 //import ProjectsPages from './components/ProjectsPages'
-import ProjectPage1 from "./components/ProjectPage1";
+//import ProjectPage1 from "./components/ProjectPage1";
 import ProjectPage2 from "./components/ProjectPage2";
 import ProjectPage3 from "./components/ProjectPage3";
 import Helmet from "react-helmet";
@@ -122,7 +122,7 @@ const ProjectsPages = (props) => {
       );
     case "b":
       return (
-        <ProjectPage1
+        <ProjectPage2
           handleLeftClick={handleLeftClick}
           handleRightClick={handleRightClick}
         />
@@ -136,7 +136,7 @@ const ProjectsPages = (props) => {
       );
     default:
       return (
-        <ProjectPage1
+        <ProjectPage2
           handleLeftClick={handleLeftClick}
           handleRightClick={handleRightClick}
         />
