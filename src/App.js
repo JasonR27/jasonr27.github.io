@@ -1,17 +1,17 @@
-import React from 'react';
+import React from "react";
 //import styles from './App.module.css';
-import 'bootstrap/dist/css/bootstrap.css'
-import { BrowserRouter as Router } from 'react-router-dom'
-import { createStore } from 'redux'
-import { connect, Provider } from 'react-redux'
-import { WelcomeSection } from './components/WelcomeSection'
-import { NavBar } from './components/NavBar'
-import ContactInfoAndFooter from './components/ContactInfoAndFooter'
+import "bootstrap/dist/css/bootstrap.css";
+import { BrowserRouter as Router } from "react-router-dom";
+import { createStore } from "redux";
+import { connect, Provider } from "react-redux";
+import { WelcomeSection } from "./components/WelcomeSection";
+import { NavBar } from "./components/NavBar";
+import ContactInfoAndFooter from "./components/ContactInfoAndFooter";
 //import ProjectsPages from './components/ProjectsPages'
-import ProjectPage1 from './components/ProjectPage1'
-import ProjectPage2 from './components/ProjectPage2'
-import ProjectPage3 from './components/ProjectPage3'
-import Helmet from 'react-helmet'
+import ProjectPage1 from "./components/ProjectPage1";
+import ProjectPage2 from "./components/ProjectPage2";
+import ProjectPage3 from "./components/ProjectPage3";
+import Helmet from "react-helmet";
 
 //Redux:
 
@@ -22,7 +22,7 @@ const rightClick = () => {
   return {
     type: RC,
     current: store.getState().current,
-    array: store.getState().array
+    array: store.getState().array,
   };
 };
 
@@ -30,14 +30,12 @@ const leftClick = () => {
   return {
     type: LC,
     current: store.getState().current,
-    array: store.getState().array
+    array: store.getState().array,
   };
 };
 
 const compChngReducer = (state, action) => {
-
   switch (action.type) {
-
     case RC:
       console.log("case RC");
       if (action.current >= action.array.length - 1) {
@@ -54,10 +52,10 @@ const compChngReducer = (state, action) => {
       }
 
     default:
-      console.log("Reducer default case")
+      console.log("Reducer default case");
       return {
         array: ["a", "b", "c"],
-        current: 1
+        current: 1,
       };
   }
 };
@@ -70,42 +68,38 @@ export const store = createStore(
 const mapStateToProps = (status) => {
   return {
     array: ["a", "b", "c"],
-    current: 1
+    current: 1,
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
     leftClickR: () => dispatch(leftClick()),
-    rigthClickR: () => dispatch(rightClick())
+    rigthClickR: () => dispatch(rightClick()),
   };
 };
 
 // React:
 
 function Portfolio() {
-
   return (
     <Router>
       <Helmet>
         <link rel="stylesheet" href="App.module.css" />
       </Helmet>
       <Provider store={store} exact route="/">
-        <div className="App">          
+        <div className="App">
           <NavBar />
           <WelcomeSection />
-          <div id="projectsstand"></div>
-          <ProjectsStand />
+          <div id="projectsstand"> </div> <ProjectsStand />
           <ContactInfoAndFooter />
-        </div >
+        </div>
       </Provider>
     </Router>
   );
 }
 
-
 const ProjectsPages = (props) => {
-
   const handleRightClick = () => {
     console.log(store.getState());
     props.rigthClickR();
@@ -148,36 +142,41 @@ const ProjectsPages = (props) => {
         />
       );
   }
-}
+};
 
-const ProjectsStand = connect(mapStateToProps, mapDispatchToProps)(ProjectsPages);
+const ProjectsStand = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(ProjectsPages);
 
 export const PrtflAppWrapper = () => {
   return (
-    <section id="PrtflAppWrapper" >
+    <section id="PrtflAppWrapper">
       <Portfolio />
     </section>
   );
-}
+};
 
 export default PrtflAppWrapper;
 
-{/* 
-  
-  template for objects from .JSON file,
-  {
-    img: "project img link"
-    name: "project name"
-    id:
-    projectLink:      
-  }
-  
-  future project component = {projects.JSON.map((project) => (
-                        <div
-                            className="project-tile"
-                            id={project.name}                                                
-                            key={project.name + " key"}
-                        ><img src={project.img}></img>
-                        <p>{project.name}</p>
-                        </div>
-                    ))} */}
+{
+  /* 
+            
+            template for objects from .JSON file,
+            {
+              img: "project img link"
+              name: "project name"
+              id:
+              projectLink:      
+            }
+            
+            future project component = {projects.JSON.map((project) => (
+                                  <div
+                                      className="project-tile"
+                                      id={project.name}                                                
+                                      key={project.name + " key"}
+                                  ><img src={project.img}></img>
+                                  <p>{project.name}</p>
+                                  </div>
+                              ))} */
+}

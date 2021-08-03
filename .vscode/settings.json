@@ -1,0 +1,7 @@
+{
+    "typescript.format.enable": false,
+    "javascript.format.enable": false,
+    "editor.formatOnSaveMode": "modifications",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+}
