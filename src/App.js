@@ -1,5 +1,7 @@
 import React from "react";
-//import styles from './App.module.css';
+  //import styles from './App.module.css';
+//import styles from "./App.module.css";
+//import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { BrowserRouter as Router } from "react-router-dom";
 import { createStore } from "redux";
@@ -8,7 +10,7 @@ import { WelcomeSection } from "./components/WelcomeSection";
 import { NavBar } from "./components/NavBar";
 import ContactInfoAndFooter from "./components/ContactInfoAndFooter";
 //import ProjectsPages from './components/ProjectsPages'
-//import ProjectPage1 from "./components/ProjectPage1";
+import ProjectPage1 from "./components/ProjectPage1";
 import ProjectPage2 from "./components/ProjectPage2";
 import ProjectPage3 from "./components/ProjectPage3";
 import Helmet from "react-helmet";
@@ -82,6 +84,7 @@ const mapDispatchToProps = (dispatch) => {
 // React:
 
 function Portfolio() {
+  
   return (
     <Router>
       <Helmet>
@@ -89,9 +92,10 @@ function Portfolio() {
       </Helmet>
       <Provider store={store} exact route="/">
         <div className="App">
-          <NavBar />
-          <WelcomeSection />
-          <div id="projectsstand"> </div> <ProjectsStand />
+          <NavBar  />
+          <WelcomeSection/>
+          <div id="projectsstand"> </div>
+          <ProjectsStand  />
           <ContactInfoAndFooter />
         </div>
       </Provider>
@@ -122,7 +126,7 @@ const ProjectsPages = (props) => {
       );
     case "b":
       return (
-        <ProjectPage2
+        <ProjectPage1
           handleLeftClick={handleLeftClick}
           handleRightClick={handleRightClick}
         />
@@ -136,7 +140,7 @@ const ProjectsPages = (props) => {
       );
     default:
       return (
-        <ProjectPage2
+        <ProjectPage1
           handleLeftClick={handleLeftClick}
           handleRightClick={handleRightClick}
         />
@@ -151,32 +155,10 @@ const ProjectsStand = connect(
 
 export const PrtflAppWrapper = () => {
   return (
-    <section id="PrtflAppWrapper">
+    <section>
       <Portfolio />
     </section>
   );
 };
 
 export default PrtflAppWrapper;
-
-{
-  /* 
-            
-            template for objects from .JSON file,
-            {
-              img: "project img link"
-              name: "project name"
-              id:
-              projectLink:      
-            }
-            
-            future project component = {projects.JSON.map((project) => (
-                                  <div
-                                      className="project-tile"
-                                      id={project.name}                                                
-                                      key={project.name + " key"}
-                                  ><img src={project.img}></img>
-                                  <p>{project.name}</p>
-                                  </div>
-                              ))} */
-}

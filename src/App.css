@@ -18,6 +18,7 @@ a {
   font-weight: 555;
 }
 
+
 /* Global Classes and ID's */
 
 html {
@@ -30,18 +31,12 @@ html {
   flex-direction: column;
   width: 100%;
   font-family: arial;
-  color: white; 
+  color: white;
 }
 
 body {
   display: grid;
-  justify-content: center;  
-  align-items: center;      
-}
-
-root {
-  display: grid;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
 }
 
@@ -55,21 +50,10 @@ root {
   font-size: 1.7rem;
 }
 
-#navbutton, #basic-nav-dropdown {
+#navbutton,
+#basic-nav-dropdown {
   margin-right: 3px;
   margin-left: 3px;
-}
-
-#welcome-section {
-  box-sizing: border-box;
-  height: 100vh;
-  background-color: #303030;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding-left: -3rem;
 }
 
 #welcome-section h1 {
@@ -84,14 +68,13 @@ root {
 
 #projectsstand {
   height: 0rem;
-  background-color: #667292;
 }
 
-#arrowButtons { 
+#arrowButtons {
   margin: 15px;
-  padding: 15px;     
+  padding: 15px;
   background-color: transparent;
-  width: 9rem;  
+  width: 9rem;
 }
 
 .btnsR:hover {
@@ -102,37 +85,29 @@ root {
   transform: translateX(-10px);
 }
 
-#projects {
-  display: flex;
-  flex-direction: row;   
-  background-color: #667292;
-  height: 200vh;  
-  justify-content: center;
-  align-items: center;
+.underContruction {
+  background: url("../src/images/image1.jpg");
+}
 
+
+#pArrowIcons {
+  font-size: 7rem;
+}
+
+#arrowsColors {
+  font-size: 5rem;
 }
 
 #titleProjectsButton {
+  /**background-color: rgba(250, 235, 28, 0.25); */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   text-align: center;
-  background-color: #667292;
   height: 200vh;
   justify-content: center;
   align-items: center;
-  width: 80%;
-}
-
-#titleProjecton {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  text-align: center;
-  background-color: #667292;
-  height: 200vh;
-  justify-content: center;
-  align-items: center;
+  width: 90%;
 }
 
 #titleProjectsButton ul {
@@ -140,42 +115,43 @@ root {
   height: 80%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-  grid-gap: 5rem;
+  grid-gap: 3rem;
   justify-items: center;
 }
 
-#titleProjectsButton li {
-  left: 0;
+#titleProjectsButton ul li {
+  width: 100%;
+  height: 100%;    
 }
 
 .project-tile {
   width: 100%;
-  height: 80%;
+  height: 100%;    
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #project_imgs {
   width: 100%;
   height: 85%;
-  border-radius: 3px;
+  border-radius: 3px;    
 }
 
 .project-tile p {
-  width: inherit;
+  width: 100%;
   height: 15%;
   font-size: 1.5rem;
-  background-color: gray;
-  margin-top: -2rem;
-  padding-top: -2rem;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: black;
+  /**margin-top: -2rem;
+padding-top: -2rem; */
 }
 
 #titleProjectsButton h3 {
   font-size: 4rem;
   color: white;
-  text-decoration: underline;    
+  text-decoration: underline;
 }
 
 #titleProjectsButton a {
@@ -206,7 +182,8 @@ root {
   text-align: center;
 }
 
-#Contact_Info h4, #Contact_Info p {
+#Contact_Info h4,
+#Contact_Info p {
   color: gray;
 }
 
@@ -253,33 +230,43 @@ footer div {
   flex-direction: row;
 }
 
+#footerSign {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
 @media (max-width: 750px) {
   footer {
-    flex-direction: column;
-    width: 100%;
+      flex-direction: column;
+      width: 100%;
   }
 }
+
 
 /* 1200px / 16px = 75em */
 
 @media (max-width: 75em) {
   html {
-    font-size: 60%;
+      font-size: 60%;
   }
 }
+
 
 /* 980px / 16px = 61.25em */
 
 @media (max-width: 61.25em) {
   html {
-    font-size: 58%;
+      font-size: 58%;
   }
 }
+
 
 /* 460px / 16px = 28.75em */
 
 @media (max-width: 28.75em) {
   html {
-    font-size: 55%;
+      font-size: 55%;
   }
 }
