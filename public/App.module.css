@@ -190,9 +190,7 @@ body {
 }
 
 #contactInfoAndFooter {
-  height: 100vh;
-  background: url("https://miro.medium.com/max/1400/1*CpDidbInbG4Er_0j_hknFQ.jpeg");
-  background-size: cover;
+  height: 100vh;  
 }
 
 #Contact_Info {
@@ -202,6 +200,8 @@ body {
   align-items: center;  
   height: 85vh;
   text-align: center;
+  background: url("https://miro.medium.com/max/1400/1*CpDidbInbG4Er_0j_hknFQ.jpeg");
+  background-size: cover;
 }
 
 #Contact_Info h4,
@@ -244,6 +244,7 @@ footer {
   border-top: 5px solid #c94c4c;
   align-items: center;
   font-size: 1.7rem;
+  background-color: rgba(21, 49, 47, 0.692);
 }
 
 footer div {
