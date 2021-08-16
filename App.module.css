@@ -45,8 +45,10 @@ body {
 }
 
 #Navbar {
-  height: 5rem;
-  font-size: 1.7rem;
+  height: 5rem;  
+  padding-bottom: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 #navbutton,
